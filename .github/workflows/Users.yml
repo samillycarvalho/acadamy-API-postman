@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: report
-          path: ./result_Users/report.html
+          path: ./result_Users/**
