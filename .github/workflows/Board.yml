@@ -35,4 +35,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: report
-          path: ./result_Board/**
+          path: ./result_Board/report.html
