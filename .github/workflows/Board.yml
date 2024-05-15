@@ -1,4 +1,4 @@
-name: Login
+name: Board
 
 on: 
 
@@ -30,7 +30,7 @@ jobs:
 
 
       - name: Step 3 Execute collection
-        run: newman run ./Board.json -e ./QA.json -g ./globals.json -r htmlextra --reporter-htmlextra-export ./result_Board/report.html
+        run: newman run ./Board.json -e ./QA.json -g ./globals.json --delay-request 1 --reporters cli, -r htmlextra --reporter-htmlextra-export ./result_Board/report.html
 
       - name: Step 4 Archive production artifacts
         uses: actions/upload-artifact@v4
